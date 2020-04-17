@@ -14,7 +14,7 @@ public class hw6 {
                int avg2 =   (int)(avg/2);
         System.out.println(avg2);
         if (avg2 > 3) {
-           System.out.println("Программа выполнена корректно ");}
+           System.out.println("Программа выполнена корректно");}
 
 
     }
