@@ -14,8 +14,7 @@ public class hw10 {
         for (i = 0; i < y; i++) {
             for (j = 0; j < x; j++) {
                 System.out.println("Введите число в массив:");
-                BufferedReader num = new BufferedReader(new InputStreamReader(System.in));
-                int number = Integer.parseInt(num.readLine());
+                int number = Integer.parseInt(s.readLine());
                 massive[i][j] = number;
             }
         }
