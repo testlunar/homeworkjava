@@ -5,7 +5,6 @@ import java.io.InputStreamReader;
 public class hw10 {
     public static void main(String[] args) throws Exception {
         System.out.println("Введите размерность матрицы (столбец и строка):");
-
         BufferedReader s = new BufferedReader(new InputStreamReader(System.in));
         int y = Integer.parseInt(s.readLine());
         int x = Integer.parseInt(s.readLine());
