@@ -15,9 +15,9 @@ public class hw9 {
             massive[i] = number;
         }
 
-        System.out.println("Ваш массив выглядит так:");
+        System.out.println("Теперь ваш массив выглядит так:");
         for (i = 0; i < size; i++) {
-            System.out.println(massive[i]);
+            System.out.println(massive[i]*2);
         }
 
 
