@@ -10,8 +10,7 @@ public class hw9 {
         int i = 0;
         for (i = 0; i < size; i++) {
             System.out.println("Введите " + i + " число в массив:");
-            BufferedReader num = new BufferedReader(new InputStreamReader(System.in));
-            int number = Integer.parseInt(num.readLine());
+            int number = Integer.parseInt(s.readLine());
             massive[i] = number;
         }
 
