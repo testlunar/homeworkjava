@@ -11,15 +11,3 @@ public class hw11 {
         System.out.println(S);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
