@@ -1,25 +1,24 @@
 package com.company;
-
+import java.io.*;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class hw10 {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Введите размерность матрицы (столбец и строка):");
-        BufferedReader s = new BufferedReader(new InputStreamReader(System.in));
-        int y = Integer.parseInt(s.readLine());
-        int x = Integer.parseInt(s.readLine());
-        int massive[][] = new int[y][x];
-        int i, j = 0;
-        for (i = 0; i < y; i++) {
-            for (j = 0; j < x; j++) {
-                System.out.println("Введите число в массив:");
-                int number = Integer.parseInt(s.readLine());
-                massive[i][j] = number;
-            }
-        }
-        System.out.println("Первая строчка массива, умноженная на 3:");
-        for (j = 0; j < x; j++) {
-                       System.out.print(massive[0][j]*3+" ");
+    public static void main(String[] args) throws IOException  {
+        System.out.println( "wight height");
+        BufferedReader bis = new BufferedReader(new InputStreamReader(System.in));
+        double weight = Double.parseDouble(bis.readLine());
+        double height = Double.parseDouble(bis.readLine());
+
+        Body.calculateMassIndex(weight, height);
+    }
+
+    public static class Body {
+        public static void calculateMassIndex(double weight, double height) {
+            double index=weight/(height*height);
+            if (index<18.5) System.out.println("Недовес: меньше чем 18.5");
+            if (index>=18.5 && index<25) System.out.println("Нормальный: между 18.5 и 25");
+            if (index>=25 && index <30) System.out.println("Избыточный вес: между 25 и 30");
+            if (index>30) System.out.println("Ожирение: 30 или больше");
         }
     }
 }
