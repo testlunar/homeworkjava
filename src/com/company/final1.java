@@ -24,7 +24,7 @@ public class final1 {
             number+=massive[i]*(step);
             step=step*2;
         }
-        System.out.println("Число в двоичном формате: "+ number);
+        System.out.println("Число в десятичном формате: "+ number);
     }
 }
 
